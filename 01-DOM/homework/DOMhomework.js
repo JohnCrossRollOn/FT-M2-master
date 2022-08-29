@@ -99,7 +99,7 @@ function displayToDos() {
 function addToDo() {
   // Tu código acá:
   let nuevoToDo = new ToDo(document.querySelector('#toDoInput').value);
-  toDoItems.push(nuevoToDo);
+  toDoItems.unshift(nuevoToDo);
   document.querySelector('#toDoInput').value = '';
   displayToDos();
 }
