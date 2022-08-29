@@ -98,10 +98,10 @@ function displayToDos() {
 
 function addToDo() {
   // Tu código acá:
-  let nuevoToDo = new ToDo(toDoInput.value);
+  let nuevoToDo = new ToDo(document.querySelector('#toDoInput').value);
   toDoItems.push(nuevoToDo);
-  toDoInput.value = '';
-  displayToDos()
+  document.querySelector('#toDoInput').value = '';
+  displayToDos();
 }
 
 // Agregar un 'Event Listener' para que cada vez que el botón 'AGREGAR' sea clickeado
