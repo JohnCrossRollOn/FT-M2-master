@@ -1,44 +1,30 @@
 // Código de Nav acá
-.title {
-    font-size: 50px;
-    font-weight: bolder;
-    font-family: monospace;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: @nav-bg;
-}
+@padding:2rem;
 
-.navigation{
-    display: flex;
-    justify-content: center;
-    color:@nav-font;
+nav{
     background-color: @nav-bg;
-    border-style: solid;
-    border-bottom: 5px;
-    border-color: red;
+    color: @nav-font;
+    border: 1px solid @nav-border;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: @padding;
+    padding-bottom: @padding;
     
-    div {
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    transition: background-color 500ms;
-    }
-    div:hover {
-    background-color: @btn-bg-color;
-    color: @nav-bg;
+    .optionsContainer{
+        display: flex;
+        flex-direction: row;     
+        width: 60%;
+        justify-content: space-between;
+        font-size: 1.5em;
+        margin-top: 1em;
     }
 
-    // .btn {
-    //     color: @porcelain;
-    //     background-color: @btn-bg-color;
-    //     border-radius: 5px;
-    //     padding: 10px;
-    //     transition: background-color 500ms;
-    //   }
-    //   .btn:hover {
-    //     color: @btn-bg-color;
-    //     background-color: @porcelain;
-    //   }
+    @media (max-width:@phone) {
+
+        .optionsContainer{
+            width: 90%;
+        }
+    }
 }
 
