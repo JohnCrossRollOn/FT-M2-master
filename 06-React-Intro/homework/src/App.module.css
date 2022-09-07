@@ -1,0 +1,20 @@
+.app {
+}
+
+.singleCard{
+    position: fixed;
+    bottom:0;
+    right: 0;
+    z-index: 1;
+}
+
+.multiCard{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr{
+    background-color: white;
+}
