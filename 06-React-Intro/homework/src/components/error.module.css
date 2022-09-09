@@ -1,0 +1,20 @@
+@keyframes vibrate {
+    0%, 30%, 60%, 90%{
+              transform: translate3d(0.3rem, 0, 0);
+    }
+    15%, 45%, 75%{
+              transform: translate3d(-0.3rem, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+  }
+.error{
+    /* border: 1px solid red; */
+    margin-right:10px;
+    margin-left: 10px;
+    padding: 1px;
+    color: red;
+    animation-iteration-count: 3;
+    animation: vibrate 0.3s;
+}

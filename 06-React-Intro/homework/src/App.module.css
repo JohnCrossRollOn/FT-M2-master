@@ -12,9 +12,14 @@
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 
 hr{
     background-color: white;
+}
+.Comparador{
+    background-color: transparent;
+    border: 0px;
+    overflow: auto;
 }

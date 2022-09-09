@@ -9,7 +9,9 @@
     margin: 0;
     align-items: center;
     transition: all 0.1s;
+    border-bottom: 2px solid black;
 }
+
 .buscador{
     display: flex;
     flex-direction: row;
@@ -50,9 +52,10 @@
     border-color: lightskyblue;
     font-style:italic;
     font-weight: bolder;
+    transform: translateY(-2px);
 }
 .button:active{
-    transform: translateY(2px);
+    transform: translateY(5px);
 }
 .texto{
     display: flex;
