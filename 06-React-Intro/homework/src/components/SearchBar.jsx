@@ -11,7 +11,7 @@ export default function SearchBar(props) {
   clean()
   }
   const enter = (event) => {
-    if (event.key=='Enter') {
+    if (event.key==='Enter') {
       Search()
     }
   }
