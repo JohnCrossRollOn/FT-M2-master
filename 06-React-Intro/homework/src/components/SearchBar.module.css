@@ -57,13 +57,3 @@
 .button:active{
     transform: translateY(5px);
 }
-.texto{
-    display: flex;
-    align-content: center;
-    background-color: skyblue;
-    margin: 0;
-    font-weight: bolder;
-    padding: 2px;
-    font-style:oblique;
-    border-bottom: 2px solid black;
-}

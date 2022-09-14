@@ -1,0 +1,66 @@
+@keyframes slideLeft{
+    0%{
+        opacity: 0;
+        transform: translatex(-20rem);
+        background-color: skyblue;
+    }
+    89%{
+        transform: translatex(5px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideRight{
+    0%{
+        opacity: 0;
+        transform: translatex(20rem);
+        background-color: skyblue;
+    }
+    89%{
+        transform: translatex(-5px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.container{
+    background-color: skyblue;
+    height: 20rem;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.ciudad{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+}
+.title{
+    font-weight: bold;
+}
+.img{
+    width: 4rem;
+    height: 4rem;
+}
+.info{
+    padding: 10px;
+    animation-name: slideRight;
+    animation-duration: 0.5s
+}
+.error{
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    margin-top: 15px;
+    padding: 5px;
+}
+.text:hover{
+    font-style: italic;
+    font-weight: bold;
+    transition: all 0.2s;
+    transform: translateX(10px);
+}

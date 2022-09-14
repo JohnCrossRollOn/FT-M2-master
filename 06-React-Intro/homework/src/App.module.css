@@ -1,22 +1,20 @@
-.singleCard{
-    position: fixed;
-    bottom:0;
-    right: 0;
-    z-index: 1;
-}
-
 .multiCard{
-    margin: 10px;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 }
-
+.Top{
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top:0; 
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
 hr{
     background-color: white;
-}
-.Comparador{
-    background-color: transparent;
-    border: 0px;
-    overflow: auto;
 }

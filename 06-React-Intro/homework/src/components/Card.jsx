@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Style from './Card.module.css';
 
 export default function Card(props) {
@@ -10,7 +11,11 @@ export default function Card(props) {
     <div className={Style.TextContent}>
       <p className={Style.text}>Max: {props.max}</p>
       <p className={Style.text}>Min: {props.min}</p>
-      <p className={Style.text}>{props.name}</p>
+      <NavLink className={Style.cityName} to={`/ciudad/${props.id}`}>
+        <p>{props.name}</p>
+      </NavLink>
     </div>
   </div>
+  
+  
 };
