@@ -6,6 +6,7 @@ import SearchBar from './components/SearchBar.jsx';
 import Nav from './components/Nav';
 import About from './components/About.jsx';
 import Ciudad from './components/Ciudad';
+import axios from 'axios';
 
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b";
 
@@ -14,7 +15,7 @@ function App() {
 
   const onSearch = (ciudad) => {
     setSearchFailed(false);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
     .catch(()=>{setSearchFailed(true)})
     .then((response)=>{
       onClose(response.data.id);
