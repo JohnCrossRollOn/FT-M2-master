@@ -6,10 +6,18 @@ export const DECREMENT = 'DECREMENT';
 // de manejar ninguna de las lógicas actuales de actualización del store central de Redux.
 // Eso se lo deja al reducer(s).
 
-export const increment = () => {
+export const increment = (n) => {
+  return {
+    type: "INCREMENT",
+    payload: n
+  }
   // Completa la funcion
 };
 
-export const decrement = () => {
+export const decrement = (n) => {
+  return {
+    type: "DECREMENT",
+    payload: n
+  }
   // Completa la funcion
 };
